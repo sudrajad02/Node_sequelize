@@ -1,0 +1,444 @@
+{
+	"info": {
+		"_postman_id": "68d9bfb2-5819-4c01-834a-485a21508b75",
+		"name": "Api Schedule Bus Sequelize",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Bus",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/bus",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Bus",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "bus_name",
+							"value": "Sumber Kencono",
+							"type": "text"
+						},
+						{
+							"key": "bus_station_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "bus_img",
+							"type": "file",
+							"src": "/D:/CPC0538 copy (1).jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/bus_add",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bus_add"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Bus Station",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "bus_station_from",
+							"value": "Terminal Bus Coba",
+							"type": "text"
+						},
+						{
+							"key": "bus_station_to",
+							"value": "Terminal Bus Tes",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/bus_station_add",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bus_station_add"
+					],
+					"query": [
+						{
+							"key": "bu",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Bus",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "bus_name",
+							"value": "Putera Mulya",
+							"type": "text"
+						},
+						{
+							"key": "bus_img",
+							"type": "file",
+							"src": "/D:/New folder (2)/Putera Mulya.jpg"
+						},
+						{
+							"key": "bus_station",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/bus_edit/7",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bus_edit",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Bus",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/bus_delete/14",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bus_delete",
+						"14"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get One Bus By Bus Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/bus_search/Sumber Kencono",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bus_search",
+						"Sumber Kencono"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get One Bus By Schedule Day",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/bus_search_day/Senin",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bus_search_day",
+						"Senin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Bus Station",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/bus_station",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bus_station"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Bus Station By Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/bus_station_search/Terminal Jombor 1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bus_station_search",
+						"Terminal Jombor 1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Bus Station",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "bus_station_from",
+							"value": "Terminal Bener",
+							"type": "text"
+						},
+						{
+							"key": "bus_station_to",
+							"value": "Terminal Salah",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/bus_station_edit/2",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bus_station_edit",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Bus Station",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/bus_station_delete/16",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bus_station_delete",
+						"16"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Schedule",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/schedule",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"schedule"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get One Schedule By Day",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/bus_schedule_search/selasa",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bus_schedule_search",
+						"selasa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Schedule",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "schedule_day",
+							"value": "Senin",
+							"type": "text"
+						},
+						{
+							"key": "schedule_depature",
+							"value": "10:00:00",
+							"type": "text"
+						},
+						{
+							"key": "schedule_arrival",
+							"value": "15:00:00",
+							"type": "text"
+						},
+						{
+							"key": "bus_station_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/schedule_add/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"schedule_add",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Schedule",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "schedule_day",
+							"value": "Senin",
+							"type": "text"
+						},
+						{
+							"key": "schedule_depature",
+							"value": "04:00:00",
+							"type": "text"
+						},
+						{
+							"key": "schedule_arrival",
+							"value": "16:00:00",
+							"type": "text"
+						},
+						{
+							"key": "bus_station_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/schedule_edit/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"schedule_edit",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Schedule",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/schedule_delete/16",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"schedule_delete",
+						"16"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
