@@ -1,1 +1,1 @@
-# api_bus_sequelize
+Node js menggunakan framework express dan sequlize untuk orm nya
